@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<title>Jonathan Arellano's Webpage</title>
+</head>
+<body>
+
+
+
+<div id="content">
+    <h1>jonathanarellano<a class="red">.</a>xyz</h1>
+    <hr>
+    <div id="main">
+        <h1>Using Certbot to obtain a HTTPS conection.</h1>
+        <h2>Simple guide</h2>
+        <p><a href="jonathanarellano.xyz">Jonathan Arellano</a></p>
+        <img class="resleft" src="img1.webp">
+       
+       
+        <p> Certbot is a program provided by <a href="https://www.eff.org/">Electronic Frontier Foundation</a> that allows anyone to the option to have a their websote a https certificate</p>
+        <br>
+        <p>In this guide I will explain how to run Certbot on a debian server with nginx installled. I'm using Debian linux distro for my webserver server and my os. This guide can also apply to ubuntu servers but will require some extra steps.</p>
+        <br>
+        <p>Start by running your terminal and log in into your webpage's server and enter your password</p>
+        <pre>root@yourdomain
+        </pre>
+        <p>The following comand will install a configuration of certbot works with nginx. Might take a while so get some coffee in the meantime.</p>
+        <pre>apt install python3-certbot-nginx</pre>
+        <p>Once installation is finished. Run certbot with the following command</p>
+        <pre>certbot --nginx</pre>
+        <p>After running the command it will ask for your email. you can skips thgis by following the commands on display. This https certificates only last 3 months after expering you will have to renew it again. You can fortunalty renew it as much time as you like.</p>
+
+        <br>
+        <p>That's all.</p>
+
+    </div>
+</div>
+
+
+<footer id="footer">
+
+        <p>This Webpage is still in its infancy.</p>
+</footer>
+
+
+
+</body>
+
+</html>
